@@ -11,13 +11,22 @@
 
     <div class="container">
         <label for="passwordLength">Password Length:</label>
-        <input type="number" id="passwordLength" min="1" max="128" value="12">
+        <input type="number" id="passwordLength" min="1" max="128" value="12"> 
+        <br>
+        <label for="includeUppercase">Include Uppercase Letters:</label>
+        <input type="checkbox" id="includeUppercase" checked>
+        <br>
+        <label for="includeLowercase">Include Lowercase Letters:</label>
+        <input type="checkbox" id="includeLowercase" checked>
+        <br>
+        <label for="includeSpecial">Include Special Characters:</label>
+        <input type="checkbox" id="includeSpecial" checked>
+        <br>
 
         <label for="includeNumbers">Include Numbers:</label>
         <input type="checkbox" id="includeNumbers" checked>
 
-        <label for="includeSymbols">Include Symbols:</label>
-        <input type="checkbox" id="includeSymbols" checked>
+        <br>
 
         <button id="generateButton">Generate Password</button>
         <button id="copyButton">Copy to Clipboard</button>
