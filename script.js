@@ -1,10 +1,10 @@
-function generatepassword(length, lower, upper, number, symbol) {
+function generatepassword(length, lower, upper, number, special) {
     // Create a variable to store the password
     let password = "";
     // Create a variable to store the types of characters that will be used in the password
-    const typesCount = lower + upper + number + symbol;
+    const typesCount = lower + upper + number + special;
     // Create a variable to store the types of characters that will be used in the password
-    const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(
+    const typesArr = [{ lower }, { upper }, { number }, { special }].filter(
         item => Object.values(item)[0]
     );
     // If no character types are selected, return an empty string
