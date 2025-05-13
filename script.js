@@ -23,3 +23,9 @@ function generatepassword(passwordLength, lower, upper, number, special) {
     return password.slice(0, passwordLength);
     
 }
+function getRandomLower() {
+    const letters = `abcdefghijklmnopqrstuvwxyz`;
+
+    
+}
+console.log(getRandomLower()); //Random lowercase letter
