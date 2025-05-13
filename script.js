@@ -1,4 +1,4 @@
-function generatepassword(length, lower, upper, number, special) {
+function generatepassword(passwordLength, lower, upper, number, special) {
     // Create a variable to store the password
     let password = "";
     // Create a variable to store the types of characters that will be used in the password
@@ -20,6 +20,6 @@ function generatepassword(length, lower, upper, number, special) {
         });
     }
     // Return the password with the correct length
-    return password.slice(0, length);
+    return password.slice(0, passwordLength);
     
 }
