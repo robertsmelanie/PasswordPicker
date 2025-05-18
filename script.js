@@ -83,24 +83,16 @@ generateEl.addEventListener(`click`, () => {
 
     outputArea.value = password;
   
-    // passwordOutput.innerText = password ? password : `Please select at least one option and a length greater than 0`;
+ 
 });
-    // Display the password in the result element
-    // resultEl.innerText = password;
+ 
 
 // Function to copy the password to the clipboard
 clipboardEl.addEventListener(`click`, () => {
     // Accessing the text/string value (AKA the Password) for the "result" span and setting it the the "password" variable
     const password = outputArea.value;
 
-    // If the user clicks the clipboard button while no password is displayed, then an alert will be displayed to the user and function will end and nothing will be copied to the clipboard
-    // if (password === ``) {
-    //     alert(`Please generate a password first`);
-    //     return;
-    // }
-
-    // // Referencing the "navigator" object to copy the selected value to the clipboard on the device the webpage is being viewed on
-    // navigator.clipboard.writeText(password);
+   
 
     if (!password) {
         alert("Please generate a password first");
