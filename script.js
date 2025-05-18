@@ -66,6 +66,17 @@ const specialEl = document.getElementById(`special`);
 const generateEl = document.getElementById(`generateButton`);
 const outputArea = document.getElementById(`OutputArea`);
 const passwordOutput = document.getElementById(`passwordOutput`);
+const clearButton = document.getElementById(`clearButton`);
+// Event listener for the clear button
+clearButton.addEventListener(`click`, () => {
+    // Clear the output area and reset the checkboxes
+    outputArea.value = ``;
+    lengthEl.value = 8;
+    lowerEl.checked = true;
+    upperEl.checked = false;
+    numberEl.checked = false;
+    specialEl.checked = false;
+});
 
     
 
