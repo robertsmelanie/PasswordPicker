@@ -56,15 +56,17 @@ function generatePassword(length, lower, upper, number, special) {
 }
 
 // DOM Elements
-const resultEl = document.getElementById(`result`);
-const clipboardEl = document.getElementById(`clipboard`);
-const lengthEl = document.getElementById(`length`);
+// const resultEl = document.getElementById(`result`);
+const clipboardEl = document.getElementById(`copyButton`);
+const lengthEl = document.getElementById(`passwordLength`);
 const upperEl = document.getElementById(`upper`);
 const lowerEl = document.getElementById(`lower`);
-const numberEl = document.getElementById(`number`);
+const numberEl = document.getElementById(`numbers`);
 const specialEl = document.getElementById(`special`);
-const generateEl = document.getElementById(`generate`);
-const passwordLengthEl = document.getElementById(`password-length`);
+const generateEl = document.getElementById(`generateButton`);
+const clipboardEl = document.getElementById(`copyButton`);
+const passwordOutput = document.getElementById(`passwordOutput`);
+
     
 
 // Event listener for the generate button
@@ -78,9 +80,13 @@ generateEl.addEventListener(`click`, () => {
 
     // Generate the password
     const password = generatePassword(length, lower, upper, number, special);
-    // Display the password in the result element
-    resultEl.innerText = password;
+
+    outputArea.value = password;
+    passwordOutput.innerText = password ? password : `Please select at least one option and a length greater than 0`;
 });
+    // Display the password in the result element
+    // resultEl.innerText = password;
+
 // Function to copy the password to the clipboard
 clipboardEl.addEventListener(`click`, () => {
     // Accessing the text/string value (AKA the Password) for the "result" span and setting it the the "password" variable
