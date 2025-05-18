@@ -82,9 +82,7 @@ generateEl.addEventListener(`click`, () => {
     const password = generatePassword(length, lower, upper, number, special);
 
     outputArea.value = password;
-    // passwordOutput.outputArea.value = password;
-    // passwordOutput.AreaOutput.value = password;
-    // passwordOutput.Output.value = password;
+  
     // passwordOutput.innerText = password ? password : `Please select at least one option and a length greater than 0`;
 });
     // Display the password in the result element
