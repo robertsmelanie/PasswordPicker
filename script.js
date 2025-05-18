@@ -64,7 +64,7 @@ const lowerEl = document.getElementById(`lower`);
 const numberEl = document.getElementById(`numbers`);
 const specialEl = document.getElementById(`special`);
 const generateEl = document.getElementById(`generateButton`);
-const clipboardEl = document.getElementById(`copyButton`);
+const outputArea = document.getElementById(`outputArea`);
 const passwordOutput = document.getElementById(`passwordOutput`);
 
     
