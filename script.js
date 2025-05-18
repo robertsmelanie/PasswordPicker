@@ -94,12 +94,21 @@ clipboardEl.addEventListener(`click`, () => {
     const password = outputArea.value;
 
     // If the user clicks the clipboard button while no password is displayed, then an alert will be displayed to the user and function will end and nothing will be copied to the clipboard
-    if (password === ``) {
-        alert(`Please generate a password first`);
+    // if (password === ``) {
+    //     alert(`Please generate a password first`);
+    //     return;
+    // }
+
+    // // Referencing the "navigator" object to copy the selected value to the clipboard on the device the webpage is being viewed on
+    // navigator.clipboard.writeText(password);
+
+    if (!password) {
+        alert("Please generate a password first");
         return;
     }
-
-    // Referencing the "navigator" object to copy the selected value to the clipboard on the device the webpage is being viewed on
-    navigator.clipboard.writeText(password);
+    navigator.clipboard.writeText(password)
+        .then(() => alert("Password copied to clipboard!"))
+        .catch(() => alert("Failed to copy password to clipboard."));
+    
 });
 
