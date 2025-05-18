@@ -91,7 +91,7 @@ generateEl.addEventListener(`click`, () => {
 // Function to copy the password to the clipboard
 clipboardEl.addEventListener(`click`, () => {
     // Accessing the text/string value (AKA the Password) for the "result" span and setting it the the "password" variable
-    const password = resultEl.innerText;
+    const password = outputArea.value;
 
     // If the user clicks the clipboard button while no password is displayed, then an alert will be displayed to the user and function will end and nothing will be copied to the clipboard
     if (password === ``) {
