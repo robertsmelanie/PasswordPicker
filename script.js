@@ -64,7 +64,7 @@ const lowerEl = document.getElementById(`lower`);
 const numberEl = document.getElementById(`numbers`);
 const specialEl = document.getElementById(`special`);
 const generateEl = document.getElementById(`generateButton`);
-const outputArea = document.getElementById(`outputArea`);
+const outputArea = document.getElementById(`OutputArea`);
 const passwordOutput = document.getElementById(`passwordOutput`);
 
     
@@ -82,7 +82,10 @@ generateEl.addEventListener(`click`, () => {
     const password = generatePassword(length, lower, upper, number, special);
 
     outputArea.value = password;
-    passwordOutput.innerText = password ? password : `Please select at least one option and a length greater than 0`;
+    // passwordOutput.outputArea.value = password;
+    // passwordOutput.AreaOutput.value = password;
+    // passwordOutput.Output.value = password;
+    // passwordOutput.innerText = password ? password : `Please select at least one option and a length greater than 0`;
 });
     // Display the password in the result element
     // resultEl.innerText = password;
