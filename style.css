@@ -13,7 +13,8 @@ h1 {
     color: navy;
     margin-left: 20px;
 }
-generateButton {
+#generateButton {
+
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -21,7 +22,9 @@ generateButton {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    justify-content: center;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    align-items: center;
 }
