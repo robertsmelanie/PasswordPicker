@@ -19,15 +19,18 @@ h1 {
     border: none;
     color: white;
     padding: 15px 32px;
-    display:flex;
+    display: block;
+    margin: auto;
+    /* display:grid;
+    place-items: center;
     flex-direction:column
-align-items: center;
-    text-align: center;
+    align-items: center;
+    text-align: center; */
     text-decoration: none;
     /* display: inline-block; */
-    justify-content: center;
+    /* justify-content: center; */
     font-size: 16px;
-    margin: 4px 2px;
+    /* margin: 4px 2px; */
     cursor: pointer;
     align-items: center;
 }
