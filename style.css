@@ -74,7 +74,7 @@ h1 {
     background-color: darkblue; /* Darker blue on hover */
 }
 textarea {
-    width: 100%;
+    width: 50%;
     height: 100px;
     padding: 10px;
     border: 1px solid #ccc;
