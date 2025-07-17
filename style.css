@@ -68,7 +68,7 @@ h1 {
     background-color: navy; /* Darker green on hover */
 }
 #clearButton:hover {
-    background-color: darkred; /* Darker red on hover */
+    background-color: navy; /* Darker red on hover */
 }
 #generateButton:hover {
     background-color: darkblue; /* Darker blue on hover */
