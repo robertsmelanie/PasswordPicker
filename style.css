@@ -65,7 +65,7 @@ h1 {
     cursor: pointer;
 }
 #copyButton:hover {
-    background-color: darkgreen; /* Darker green on hover */
+    background-color: navy; /* Darker green on hover */
 }
 #clearButton:hover {
     background-color: darkred; /* Darker red on hover */
