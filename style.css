@@ -54,9 +54,9 @@ h1 {
 }
 
 #copyButton {
-    background-color: rgb(223, 232, 247); /* Green */
+    background-color: navy; /* Green */
     border: none;
-    color: rgb(12, 12, 12);
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
@@ -66,6 +66,9 @@ h1 {
 }
 #copyButton:hover {
     background-color: navy; /* Darker green on hover */
+    background-color: rgb(223, 232, 247);
+    color: black;
+        /* Green */
 }
 #clearButton:hover {
     background-color: navy; /* Darker red on hover */
