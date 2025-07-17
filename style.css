@@ -54,7 +54,7 @@ h1 {
 }
 
 #copyButton {
-    background-color: green; /* Green */
+    background-color: rgb(0, 45, 128); /* Green */
     border: none;
     color: white;
     padding: 10px 20px;
